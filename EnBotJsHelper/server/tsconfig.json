@@ -1,0 +1,18 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "module": "CommonJS",
+        "jsx": "preserve",
+        "noEmit": true,
+        "baseUrl": "../",
+        "paths": {
+            "*": ["node_modules/*"],
+            "@server/*": ["server/*"],
+            "@routes/*": ["server/routes/*"],
+            "@api/*": ["api/*"],
+            "@secure/*": ["secure/*"],
+            "@utils/*": ["utils/*"],
+        },
+    },
+    "include": ["**/*"]
+}

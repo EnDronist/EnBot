@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EnBotJsAPI\Новая папка\**" />
+    <Compile Remove="Новая папка\**" />
+    <EmbeddedResource Remove="EnBotJsAPI\Новая папка\**" />
+    <EmbeddedResource Remove="Новая папка\**" />
+    <None Remove="EnBotJsAPI\Новая папка\**" />
+    <None Remove="Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="2.4.0" />
+  </ItemGroup>
+
+</Project>
